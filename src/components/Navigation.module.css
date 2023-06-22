@@ -91,6 +91,7 @@
     position: static;
     border: none;
     padding: 0;
+    overflow-y: hidden;
   }
   .links {
     flex-direction: row;
