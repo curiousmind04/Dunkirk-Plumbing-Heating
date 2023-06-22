@@ -28,7 +28,7 @@ const Intro = () => {
           </a>
         </div>
         <span className={classes.introInfo}>
-          Serving the community for over 10 years
+          *Serving the community for over 10 years
         </span>
       </div>
       <div className={classes.intro}>

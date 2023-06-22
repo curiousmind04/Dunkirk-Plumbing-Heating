@@ -35,27 +35,27 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about" onClick={closeMenu}>
+                    <Link to="/" onClick={closeMenu}>
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about" onClick={closeMenu}>
+                    <Link to="/" onClick={closeMenu}>
                       Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about" onClick={closeMenu}>
+                    <Link to="/" onClick={closeMenu}>
                       Gallery
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about" onClick={closeMenu}>
+                    <Link to="/" onClick={closeMenu}>
                       FAQ
                     </Link>
                   </li>
                   <li>
-                    <Link to="/contact" onClick={closeMenu}>
+                    <Link to="/" onClick={closeMenu}>
                       Contact Us
                     </Link>
                   </li>
