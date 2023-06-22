@@ -125,7 +125,7 @@ const FeaturedServices = () => {
           </li>
         </ul>
       </div>
-      <Link to="/services">More Details</Link>
+      <Link to="/">More Details</Link>
     </section>
   );
 };
