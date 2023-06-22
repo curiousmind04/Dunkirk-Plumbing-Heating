@@ -63,3 +63,34 @@
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
+
+@media (min-width: 48rem) {
+  .footer {
+    padding: 2rem 1rem 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dunkirkLogo {
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+  .links {
+    grid-column: 2;
+    grid-row: 1;
+    gap: 3rem;
+  }
+  .middle {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .connect {
+    margin-bottom: 0;
+  }
+}

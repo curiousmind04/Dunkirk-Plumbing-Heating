@@ -23,45 +23,46 @@ const Navigation = () => {
             />
           </div>
           <nav>
-            {menu && (
-              <div className={classes.linksContainer}>
-                <button className={classes.close} onClick={closeMenu}>
-                  <img src="/assets/icons/icon-close.svg" alt="close icon" />
-                </button>
-                <ul className={classes.links}>
-                  <li>
-                    <Link to="/" onClick={closeMenu}>
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" onClick={closeMenu}>
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" onClick={closeMenu}>
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" onClick={closeMenu}>
-                      Gallery
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" onClick={closeMenu}>
-                      FAQ
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" onClick={closeMenu}>
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
+            <div
+              className={classes.linksContainer}
+              hidden={menu ? false : true}
+            >
+              <button className={classes.close} onClick={closeMenu}>
+                <img src="/assets/icons/icon-close.svg" alt="close icon" />
+              </button>
+              <ul className={classes.links}>
+                <li>
+                  <Link to="/" onClick={closeMenu}>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={closeMenu}>
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={closeMenu}>
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={closeMenu}>
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={closeMenu}>
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={closeMenu}>
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
             {!menu && (
               <button

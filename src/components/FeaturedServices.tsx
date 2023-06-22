@@ -5,7 +5,8 @@ import classes from "./FeaturedServices.module.css";
 const FeaturedServices = () => {
   return (
     <section className={classes.container}>
-      <img src="/assets/images/services-image.jpg" alt="services image" />
+      {/* <img src="/assets/images/services-image.jpg" alt="services image" /> */}
+      <div className={classes.brightness}></div>
       <h2>Some of our Services</h2>
       <div className={classes.lists}>
         <ul className={classes.list}>

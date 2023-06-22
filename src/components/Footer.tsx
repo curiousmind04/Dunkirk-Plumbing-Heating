@@ -10,23 +10,30 @@ const Footer = () => {
         alt="dunkirk logo"
         className={classes.dunkirkLogo}
       />
-      <div className={classes.call}>
-        <img src="/assets/icons/icon-phone.svg" alt="phone icon" />
-        <span>(647)-403-4203</span>
+
+      <div className={classes.middle}>
+        <div className={classes.call}>
+          <img src="/assets/icons/icon-phone.svg" alt="phone icon" />
+          <span>(647)-403-4203</span>
+        </div>
+        <div className={classes.connect}>
+          <a
+            href="mailto:b6_10_94_furlonge@hotmail.com"
+            className={classes.mail}
+          >
+            <img src="/assets/icons/icon-mail.svg" alt="mail icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/dunkirk_plumbing/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.instagram}
+          >
+            <img src="/assets/icons/icon-instagram.svg" alt="instagram icon" />
+          </a>
+        </div>
       </div>
-      <div className={classes.connect}>
-        <a href="mailto:b6_10_94_furlonge@hotmail.com" className={classes.mail}>
-          <img src="/assets/icons/icon-mail.svg" alt="mail icon" />
-        </a>
-        <a
-          href="https://www.instagram.com/dunkirk_plumbing/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.instagram}
-        >
-          <img src="/assets/icons/icon-instagram.svg" alt="instagram icon" />
-        </a>
-      </div>
+
       <div>
         <nav className={classes.links}>
           <ul>
@@ -41,7 +48,6 @@ const Footer = () => {
             </li>
           </ul>
           <ul>
-            {" "}
             <li>
               <Link to="/">Gallery</Link>
             </li>

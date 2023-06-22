@@ -1,10 +1,8 @@
-/* .container {
-  margin-bottom: 20rem;
-} */
-
 .sink {
   width: 100%;
+  max-height: 564px;
   position: relative;
+  overflow: hidden;
 }
 
 .sink > img {
@@ -45,7 +43,6 @@
 }
 
 .call {
-  /* background-color: hsl(0, 0%, 100%); */
   background-color: hsl(0, 0%, 0%);
   height: 40px;
   border: 2px solid hsl(0, 0%, 100%);
@@ -77,47 +74,54 @@
 }
 
 .intro {
-  /* background-color: hsl(186, 90%, 27%); */
-  background-color: hsl(186, 100%, 14%);
-  border-top: 3px solid hsl(0, 0%, 100%);
+  font-family: "Livvic", sans-serif;
   padding: 4rem 1rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   position: relative;
 }
 
-.intro > img {
+.intro > div {
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.intro img {
   position: absolute;
   top: 0;
   left: calc(50% - 33.5px);
+  filter: brightness(0) saturate(100%) invert(99%) sepia(8%) saturate(60%)
+    hue-rotate(34deg) brightness(90%) contrast(90%);
 }
 
 .intro p {
-  color: hsl(0, 0%, 100%);
   font-size: 0.9rem;
   position: relative;
 }
 
 .name {
-  color: hsl(179, 42%, 63%);
+  color: #030e2b;
   font-size: 1.1rem;
   font-weight: 500;
   display: block;
 }
 
 .position {
-  color: hsl(0, 0%, 100%);
   font-size: 0.85rem;
   font-weight: 500;
   display: block;
 }
 
 .assessment {
-  background-color: rgb(227, 234, 241);
-  /* border: 3px solid hsl(186, 100%, 14%); */
+  background-color: #f2f2f2;
   padding: 1.5rem 1rem;
+}
+
+.assessment > div {
+  max-width: 430px;
+  margin-inline: auto;
 }
 
 .assessmentIcons {
@@ -133,58 +137,84 @@
 }
 
 .title {
-  background-color: hsl(186, 100%, 14%);
+  background-color: #030e2b;
+  /* background-color: hsl(212, 75%, 60%); */
   padding: 1rem;
+  margin-inline: auto;
   margin-bottom: 1rem;
 }
 
 .assessment h2 {
   color: hsl(0, 0%, 100%);
-  /* color: rgb(0, 8, 17); */
-  /* opacity: 0.8; */
-  /* margin-inline: auto; */
   text-align: center;
 }
 
-.assessment h3 {
-  /* color: hsl(0, 0%, 100%); */
-  /* opacity: 0.8; */
-  text-decoration: underline;
-  margin-bottom: 0.5rem;
+.steps {
+  margin-bottom: 2rem;
 }
 
-.assessment ul {
-  list-style: none;
-}
-
-.stepOne {
-  margin-bottom: 1rem;
-}
-
-.stepOne ul,
-.stepTwo ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.8rem;
-}
-
-.stepOne li,
-.stepTwo li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0.8rem;
-}
-
-.checkmark {
-  width: 16px;
+.steps {
+  text-align: center;
 }
 
 .assessment p {
-  /* color: hsl(0, 0%, 100%); */
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.15rem;
+}
+
+@media (min-width: 48rem) {
+  .sink {
+    height: 564px;
+  }
+  .sink > img {
+    position: absolute;
+    top: -16rem;
+    left: 0;
+  }
+  .sink h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 4.2rem;
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+    z-index: 1;
+  }
+  .assessment {
+    padding: 2rem;
+  }
+  .title {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .sink {
+    height: 630px;
+    max-height: 630px;
+  }
+  .sink > img {
+    top: -18rem;
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .intro {
+    grid-column: 2;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .assessment {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .assessment > div {
+    max-width: 600px;
+    margin-inline: auto;
+  }
 }
