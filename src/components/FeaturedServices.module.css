@@ -1,0 +1,77 @@
+.container {
+  /* background-image: url("/assets/images/services-image.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; */
+  padding: 3rem 1rem;
+  border: 3px solid hsl(0, 0%, 0%);
+  /* margin-bottom: 20rem; */
+  position: relative;
+  overflow: hidden;
+}
+
+.container > img {
+  height: 100%;
+  filter: brightness(0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container h2 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.list li {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.checkmark {
+  width: 16px;
+  /* filter: invert(19%) sepia(15%) saturate(3701%) hue-rotate(145deg)
+    brightness(101%) contrast(103%); */
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(331deg)
+    brightness(107%) contrast(101%);
+}
+
+.container > a {
+  width: 14rem;
+  height: 3rem;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.9rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.4rem;
+  margin-inline: auto;
+}

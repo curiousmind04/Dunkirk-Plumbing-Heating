@@ -1,0 +1,79 @@
+.header {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1rem 1.5rem 1rem 0.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1rem;
+}
+
+.hamburger,
+.close {
+  background-color: transparent;
+  border: none;
+  display: block;
+}
+
+.hamburger > img,
+.close > img {
+  width: 20px;
+  display: block;
+}
+
+.close {
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.header a {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.dunkirkLogo {
+  width: 175px;
+  /* height: 3rem; */
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.linksContainer {
+  background-color: hsl(0, 0%, 0%);
+  width: calc(100% - 3.5rem);
+  /* height: 100vh; */
+  height: 100%;
+  max-height: 100%;
+  padding: 2rem 1.5rem 3rem 2rem;
+  border-left: 3px solid hsl(0, 0%, 100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
