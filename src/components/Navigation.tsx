@@ -17,9 +17,9 @@ const Navigation = () => {
           <div>
             {/* <h1>Dunkirk Plumbing & Heating</h1> */}
             <img
-              src="/assets/images/dunkirk-logo.jpg"
-              alt="dunkirk logo"
-              className={classes.dunkirkLogo}
+              src="/assets/images/next-logo.png"
+              alt="next logo"
+              className={classes.companyLogo}
             />
           </div>
           <nav>

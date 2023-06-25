@@ -195,6 +195,12 @@
   .sink > img {
     top: -18rem;
   }
+  .sink h1,
+  .introPhone,
+  .connect,
+  .introInfo {
+    left: 3rem;
+  }
   .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -6,15 +6,15 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <img
-        src="/assets/images/dunkirk-logo.jpg"
-        alt="dunkirk logo"
-        className={classes.dunkirkLogo}
+        src="/assets/images/next-logo.png"
+        alt="next logo"
+        className={classes.companyLogo}
       />
 
       <div className={classes.middle}>
         <div className={classes.call}>
           <img src="/assets/icons/icon-phone.svg" alt="phone icon" />
-          <span>(647)-403-4203</span>
+          <span>(647)-321-4567</span>
         </div>
         <div className={classes.connect}>
           <a
@@ -24,7 +24,7 @@ const Footer = () => {
             <img src="/assets/icons/icon-mail.svg" alt="mail icon" />
           </a>
           <a
-            href="https://www.instagram.com/dunkirk_plumbing/"
+            href="https://www.instagram.com/brandon.cbh/"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.instagram}

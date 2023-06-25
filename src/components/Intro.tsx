@@ -5,13 +5,13 @@ const Intro = () => {
     <section className={classes.container}>
       <div className={classes.sink}>
         <img src="/assets/images/sink.jpg" alt="sink image" />
-        <span className={classes.introPhone}>Contact Us: (647)-403-4203</span>
+        <span className={classes.introPhone}>Contact Us: (647)-321-4567</span>
         <h1>
-          Dunkirk Plumbing
+          Next Plumbing
           <br /> & Heating
         </h1>
         <div className={classes.connect}>
-          <a href="tel:6474034203" className={classes.call}>
+          <a href="tel:6473214567" className={classes.call}>
             <img src="/assets/icons/icon-phone.svg" alt="phone icon" />
             <span>Call Us Now</span>
           </a>
@@ -22,7 +22,7 @@ const Intro = () => {
             <img src="/assets/icons/icon-mail.svg" alt="mail icon" />
           </a>
           <a
-            href="https://www.instagram.com/dunkirk_plumbing/"
+            href="https://www.instagram.com/brandon.cbh/"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.instagram}
@@ -39,7 +39,7 @@ const Intro = () => {
           <div>
             <img src="/assets/icons/icon-quotes.svg" alt="quotes icon" />
             <p>
-              “At Dunkirk Plumbing and Heating, we are equipped with years of
+              “At Next Plumbing and Heating, we are equipped with years of
               expertise serving communities and businesses in and around the
               Greater Toronto Area. We make it our job to commit to a higher
               standard of professional service so that we can leave our
@@ -47,9 +47,9 @@ const Intro = () => {
               can rest assured during the entire process that you are in good
               hands!”
             </p>
-            <span className={classes.name}>Alex Pethick</span>
+            <span className={classes.name}>Duncan Truell</span>
             <span className={classes.position}>
-              - Founder of Dunkirk Plumbing and Heating
+              - Founder of Next Plumbing and Heating
             </span>
           </div>
         </div>
